@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply my-8 mx-auto text-center text-6xl;
+  }
+
+  nav {
+    @apply bg-white border-gray-200;
+  }
+  .nav-title {
+    @apply max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4;
+  }
+
+  .nav-title-logo {
+    @apply self-center text-2xl mx-16 my-8 font-semibold whitespace-nowrap;
+  }
+
+  .user-container {
+    @apply flex flex-wrap mx-auto items-center justify-center max-w-[1524px];
+  }
+
+  .user-profile {
+    @apply m-8 w-[512px];
+  }
+
+  .user-profile-card {
+    @apply flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100;
+  }
+
+  .user-profile-image {
+    @apply object-cover rounded-t-lg w-full h-auto rounded-none rounded-l-lg;
+  }
+
+  .user-profile-info {
+    @apply flex flex-col justify-between p-4 leading-normal;
+  }
+
+  .user-profile-info-name {
+    @apply mb-2 text-2xl font-bold tracking-tight text-gray-900;
+  }
+
+  .user-proifle-info-data {
+    @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
+  }
+
+  .main-image {
+    @apply p-4 object-cover rounded-t-2xl h-auto w-[1024px] rounded-l-lg;
+  }
+  .main-section {
+    @apply flex flex-col items-center;
+  }
+  .profile {
+    @apply max-w-[1024px] m-8 border-black border rounded-xl p-8;
+  }
+  .profile-container {
+    @apply mb-8;
+  }
+  .profile-container-title {
+    @apply text-center md:text-start text-2xl font-bold border-0 border-b-2 border-black pb-4 mb-8;
+  }
+  .profile-container-content {
+    @apply text-lg md:pl-12;
+  }
+  .profile-container-more-info {
+    @apply mt-4 flex flex-col md:items-end;
+  }
+  .profile-container-more-info-button {
+    @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none;
+  }
+}
